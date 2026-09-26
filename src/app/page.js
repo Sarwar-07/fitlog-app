@@ -92,10 +92,13 @@ export default function HomePage() {
               >
                 <div className="h-44 w-full bg-[#1b202e] overflow-hidden">
                   <img
-                    src={workout.image || 'https://placehold.co/400x250/141721/ffffff?text=Workout'}
-                    alt={workout.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+            src={workout.image || 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&auto=format&fit=crop&q=80'}
+            alt={workout.name}
+            onError={(e) => {
+              e.currentTarget.src = 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&auto=format&fit=crop&q=80';
+            }}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
                 </div>
 
                 <div className="p-5 flex-1 flex flex-col justify-between">

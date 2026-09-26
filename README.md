@@ -5,8 +5,8 @@
 ---
 
 ## 🔗 Project Links & Submission
-- **Live Site URL:** [https://fitlog-app-five.vercel.app](https://fitlog-app-five.vercel.app) *(Replace with your deployed Vercel/Netlify link)*
-- **GitHub Repository:** [https://github.com/Sarwar-07/fitlog-app](https://github.com/Sarwar-07/fitlog-app)
+- **Live Site URL:** https://fitlog-app-nine.vercel.app
+- **GitHub Repository:** https://github.com/Sarwar-07/fitlog-app
 
 ---
 

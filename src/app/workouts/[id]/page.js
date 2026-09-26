@@ -57,8 +57,11 @@ export default function WorkoutDetailPage() {
         <div className="lg:col-span-5">
           <div className="rounded-2xl overflow-hidden border border-slate-800 bg-[#131620]">
             <img
-              src={workout.image || 'https://placehold.co/600x600/141721/ffffff?text=Workout'}
+              src={workout.image || 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=600&auto=format&fit=crop&q=80'}
               alt={workout.name}
+              onError={(e) => {
+              e.currentTarget.src = 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=600&auto=format&fit=crop&q=80';
+               }}
               className="w-full h-auto object-cover max-h-[520px]"
             />
           </div>

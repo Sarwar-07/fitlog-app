@@ -1,23 +1,26 @@
 import { NextResponse } from 'next/server';
+import fallbackWorkouts from '@/data/workouts.json';
 
 export async function GET(request, { params }) {
   const { id } = await params;
+
   try {
     const res = await fetch(`https://api.abcz.workers.dev/api/fitlog/${id}`, {
       headers: {
-        'Content-Type': 'application/json',
+        'Accept': 'application/json',
       },
-      next: { revalidate: 60 },
+      cache: 'no-store',
     });
 
     if (!res.ok) {
-      throw new Error(`Failed to fetch workout details: ${res.status}`);
+      const match = fallbackWorkouts.find((w) => String(w.id) === String(id));
+      return NextResponse.json(match || fallbackWorkouts[0]);
     }
 
     const data = await res.json();
     return NextResponse.json(data);
   } catch (error) {
-    console.error('API details proxy error:', error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    const match = fallbackWorkouts.find((w) => String(w.id) === String(id));
+    return NextResponse.json(match || fallbackWorkouts[0]);
   }
 }

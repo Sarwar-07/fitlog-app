@@ -1,0 +1,242 @@
+[
+  {
+    "id": "1",
+    "name": "BARBELL BENCH PRESS",
+    "description": "A compound press that builds chest thickness, triceps, and pressing power from a stable bench.",
+    "category": ["CHEST", "ARMS"],
+    "equipment": "Barbell, Bench",
+    "difficulty": "Intermediate",
+    "sets": 4,
+    "reps": "6-8",
+    "duration": 25,
+    "calories": 180,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Lie on the bench with eyes under the bar and feet planted.",
+      "Unrack with locked elbows and lower the bar to mid-chest.",
+      "Press up in a slight arc until elbows lock without bouncing.",
+      "Keep shoulder blades pinched and a natural arch in the back."
+    ]
+  },
+  {
+    "id": "2",
+    "name": "PULL-UP",
+    "description": "A bodyweight classic targeting lats, upper back, and biceps through vertical pulling.",
+    "category": ["BACK", "ARMS"],
+    "equipment": "Pull-up Bar",
+    "difficulty": "Intermediate",
+    "sets": 3,
+    "reps": "8-10",
+    "duration": 15,
+    "calories": 120,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Grip the overhead bar with overhand grip wider than shoulders.",
+      "Engage lats and drive elbows downward toward your ribs.",
+      "Pull until your chin clears the bar cleanly.",
+      "Lower under control back to a dead hang."
+    ]
+  },
+  {
+    "id": "3",
+    "name": "BACK SQUAT",
+    "description": "The king of lower-body lifts, developing quadriceps, glutes, hamstrings, and core bracing.",
+    "category": ["LEGS", "CORE"],
+    "equipment": "Barbell, Rack",
+    "difficulty": "Advanced",
+    "sets": 4,
+    "reps": "5-6",
+    "duration": 30,
+    "calories": 240,
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Position bar across upper traps and unrack with a solid stance.",
+      "Brace core, push hips back, and bend knees simultaneously.",
+      "Descend until hip crease is below knee level.",
+      "Drive through midfoot and stand up explosively."
+    ]
+  },
+  {
+    "id": "4",
+    "name": "OVERHEAD PRESS",
+    "description": "A pure test of vertical pressing strength building deltoids, triceps, and upper chest.",
+    "category": ["SHOULDERS", "ARMS"],
+    "equipment": "Barbell",
+    "difficulty": "Intermediate",
+    "sets": 4,
+    "reps": "6-8",
+    "duration": 20,
+    "calories": 150,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Rest the barbell across front delts with hands shoulder-width.",
+      "Tighten glutes and press bar vertically past your face.",
+      "Lock out overhead with head through the window.",
+      "Lower bar smoothly back to clavicle shelf."
+    ]
+  },
+  {
+    "id": "5",
+    "name": "DUMBBELL BICEP CURL",
+    "description": "Isolates the biceps brachii and forearms to develop peak arm development.",
+    "category": ["ARMS"],
+    "equipment": "Dumbbells",
+    "difficulty": "Beginner",
+    "sets": 3,
+    "reps": "10-12",
+    "duration": 12,
+    "calories": 80,
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Stand tall holding dumbbells at sides with palms forward.",
+      "Keep elbows pinned to ribs and curl weights upward.",
+      "Squeeze biceps firmly at top of motion.",
+      "Lower weights with controlled 2-second eccentric."
+    ]
+  },
+  {
+    "id": "6",
+    "name": "HOLLOW-BODY PLANK",
+    "description": "A gymnastics-inspired static hold demanding isometric abdominal and serratus engagement.",
+    "category": ["CORE"],
+    "equipment": "Bodyweight",
+    "difficulty": "Beginner",
+    "sets": 3,
+    "reps": "45s hold",
+    "duration": 10,
+    "calories": 60,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Assume standard plank position resting on forearms.",
+      "Tuck pelvis under to flatten lower back completely.",
+      "Push shoulder blades apart actively toward the ceiling.",
+      "Breathe rhythmically while maintaining deep core tension."
+    ]
+  },
+  {
+    "id": "7",
+    "name": "CONVENTIONAL DEADLIFT",
+    "description": "A heavy posterior chain builder engaging hamstrings, glutes, lats, and spine erectors.",
+    "category": ["BACK", "LEGS"],
+    "equipment": "Barbell",
+    "difficulty": "Advanced",
+    "sets": 4,
+    "reps": "5",
+    "duration": 28,
+    "calories": 260,
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Stand with shins an inch from the bar, feet hip-width.",
+      "Hinge at hips, grip bar firmly, and pull slack out.",
+      "Push the floor away through midfoot until hips lock.",
+      "Hinge back down with control keeping bar glued to legs."
+    ]
+  },
+  {
+    "id": "8",
+    "name": "PUSH-UP",
+    "description": "The fundamental bodyweight push targeting chest, triceps, and anterior delts.",
+    "category": ["CHEST", "ARMS", "CORE"],
+    "equipment": "Bodyweight",
+    "difficulty": "Beginner",
+    "sets": 3,
+    "reps": "15-20",
+    "duration": 10,
+    "calories": 90,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1598971457999-ca8ef1046838?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Hands positioned slightly wider than shoulder-width.",
+      "Maintain a straight line from heels through head.",
+      "Lower until chest hovers an inch above the deck.",
+      "Press through palms to full lockout."
+    ]
+  },
+  {
+    "id": "9",
+    "name": "WALKING LUNGE",
+    "description": "Dynamic unilateral leg training emphasizing glutes, quads, and stability.",
+    "category": ["LEGS"],
+    "equipment": "Dumbbells (optional)",
+    "difficulty": "Intermediate",
+    "sets": 3,
+    "reps": "12/leg",
+    "duration": 18,
+    "calories": 170,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Take a long stride forward with front heel landing first.",
+      "Lower back knee toward the floor without striking it.",
+      "Push through front midfoot to stand directly into next stride.",
+      "Maintain upright torso throughout the set."
+    ]
+  },
+  {
+    "id": "10",
+    "name": "RUSSIAN TWIST",
+    "description": "Rotational core exercise loading internal and external obliques under tension.",
+    "category": ["CORE"],
+    "equipment": "Medicine Ball",
+    "difficulty": "Beginner",
+    "sets": 3,
+    "reps": "20 twists",
+    "duration": 8,
+    "calories": 70,
+    "rating": 4.1,
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Sit on floor with knees bent and feet elevated.",
+      "Hold medicine ball at chest level leaning back 45 degrees.",
+      "Rotate torso from side to side, tapping ball lightly to floor.",
+      "Keep ribs anchored and hips stable."
+    ]
+  },
+  {
+    "id": "11",
+    "name": "INCLINE DUMBBELL PRESS",
+    "description": "Emphasizes the clavicular head of the pectoralis major for upper chest fullness.",
+    "category": ["CHEST", "ARMS"],
+    "equipment": "Dumbbells, Incline Bench",
+    "difficulty": "Intermediate",
+    "sets": 4,
+    "reps": "8-10",
+    "duration": 22,
+    "calories": 160,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Set bench to 30-degree incline and sit with dumbbells on knees.",
+      "Kick weights to shoulder level and press upward.",
+      "Lower slowly until dumbbells align with upper chest.",
+      "Press up and inward without banging weights."
+    ]
+  },
+  {
+    "id": "12",
+    "name": "LATERAL RAISE",
+    "description": "Direct lateral deltoid isolation that widens shoulders and enhances V-taper physique.",
+    "category": ["SHOULDERS"],
+    "equipment": "Dumbbells",
+    "difficulty": "Beginner",
+    "sets": 4,
+    "reps": "12-15",
+    "duration": 15,
+    "calories": 85,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600&auto=format&fit=crop&q=80",
+    "instructions": [
+      "Hold light dumbbells at sides with slight elbow bend.",
+      "Raise arms out to sides until parallel to the floor.",
+      "Lead with elbows keeping pinkies slightly elevated.",
+      "Lower slowly under control without swinging hips."
+    ]
+  }
+]

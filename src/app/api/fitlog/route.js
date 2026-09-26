@@ -1,22 +1,24 @@
 import { NextResponse } from 'next/server';
+import fallbackWorkouts from '@/data/workouts.json';
 
 export async function GET() {
   try {
     const res = await fetch('https://api.abcz.workers.dev/api/fitlog', {
       headers: {
-        'Content-Type': 'application/json',
+        'Accept': 'application/json',
       },
-      next: { revalidate: 60 },
+      cache: 'no-store',
     });
 
     if (!res.ok) {
-      throw new Error(`Failed to fetch workouts: ${res.status}`);
+      console.warn(`External API returned status ${res.status}. Serving local fallback data.`);
+      return NextResponse.json(fallbackWorkouts);
     }
 
     const data = await res.json();
-    return NextResponse.json(data);
+    return NextResponse.json(Array.isArray(data) ? data : fallbackWorkouts);
   } catch (error) {
-    console.error('API proxy error:', error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    console.warn('External API unreachable. Serving local fallback data:', error.message);
+    return NextResponse.json(fallbackWorkouts);
   }
 }

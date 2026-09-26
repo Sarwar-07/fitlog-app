@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import fallbackWorkouts from '@/data/workouts.json';
 
 export default function HomePage() {
   const [workouts, setWorkouts] = useState([]);
@@ -12,9 +13,19 @@ export default function HomePage() {
       try {
         const res = await fetch('/api/fitlog');
         const data = await res.json();
-        setWorkouts(data);
+
+        if (Array.isArray(data) && data.length > 0) {
+          setWorkouts(data);
+        } else if (data && Array.isArray(data.data) && data.data.length > 0) {
+          setWorkouts(data.data);
+        } else if (data && Array.isArray(data.workouts) && data.workouts.length > 0) {
+          setWorkouts(data.workouts);
+        } else {
+          setWorkouts(fallbackWorkouts);
+        }
       } catch (err) {
-        console.error('Failed to fetch workouts:', err);
+        console.warn('Using local fallback workouts due to fetch error:', err);
+        setWorkouts(fallbackWorkouts);
       } finally {
         setLoading(false);
       }
@@ -72,7 +83,7 @@ export default function HomePage() {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {workouts.map((workout) => (
+            {(Array.isArray(workouts) ? workouts : []).map((workout) => (
               <Link
                 key={workout.id}
                 href={`/workouts/${workout.id}`}
@@ -91,7 +102,10 @@ export default function HomePage() {
                     {/* Category Tags */}
                     <div className="flex flex-wrap gap-1.5 mb-2.5">
                       {(workout.category || []).map((cat, i) => (
-                        <span key={i} className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-800 text-slate-300">
+                        <span
+                          key={i}
+                          className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-800 text-slate-300"
+                        >
                           {cat}
                         </span>
                       ))}

@@ -58,12 +58,13 @@ export default function HomePage() {
         </div>
 
         {/* Hero Illustration */}
-        <div className="lg:col-span-5 flex justify-center">
-          <div className="w-full max-w-md h-72 sm:h-96 rounded-2xl overflow-hidden border border-slate-800 bg-[#141721] flex items-center justify-center">
+        {/* Hero Illustration */}
+        <div className="lg:col-span-5 flex justify-center items-center">
+          <div className="w-full max-w-md h-72 sm:h-96 flex items-center justify-center">
             <img
-              src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&auto=format&fit=crop&q=80"
+              src="/banner.png"
               alt="Gym training banner"
-              className="w-full h-full object-cover opacity-90"
+              className="max-h-full max-w-full object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>

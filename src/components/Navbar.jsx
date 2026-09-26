@@ -13,11 +13,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-2 text-white font-extrabold text-xl tracking-wider">
-          <span className="w-7 h-7 rounded bg-[#ccff00] text-black font-black flex items-center justify-center text-sm">
-            F
-          </span>
-          FITLOG
+        <Link href="/" className="flex items-center gap-2.5 text-white font-extrabold text-xl tracking-wider">
+          <img
+            src="/logo.png"
+            alt="FitLog Logo"
+            className="w-7 h-7 object-contain"
+          />
+          <span>FITLOG</span>
         </Link>
 
         {/* Navigation Links */}
